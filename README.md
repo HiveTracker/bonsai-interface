@@ -1,17 +1,34 @@
 # Bonsai - HiveTracker
 
-A Bonsai interface for collecting raw capture data from HiveTracker devices.
+A Bonsai program to get HTC LightHouses callibration data to use with the HiveTrackers.
+
+The calibration file contains the transformation matrices (rotation + translation).
+
 
 ## Install
 
-1. Download the [Bonsai](http://bonsai-rx.org) programming language.
-2. Install Visual Studio 2012 or later.
+Download the [Bonsai](http://bonsai-rx.org) programming environment and install the following packages:
 
-## Compile
+  - VR
+  - Windows
+  - Starter Pack
+  - Scripting
 
-1. Open the `Bonsai.HiveTracker.sln` file.
-2. Build and run.
+If you get an error about missing obj files, you can get them from:
 
-## Description
+    Tools > Bonsai Gallery > RoomVR example > models
 
-In the `Workflows` folder you can find benchmark Bonsai programs for collecting and analysing raw HiveTracker data. More to come soon.
+
+## Use
+
+0. Turn Steam VR on and check that the bases + handles are all OK (visible...)
+1. Open the `Bonsai.Examples.RoomVR.bonsai` file (in the CalibrateVR folder)
+2. Build, run and press "s"
+3. It will update the `calibration.js` file
+4. Use it in the visualization web app:
+
+https://github.com/HiveTracker/hivetrackerjs/tree/master/visualization
+
+
+## Enjoy!
+
